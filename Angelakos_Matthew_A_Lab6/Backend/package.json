@@ -1,0 +1,19 @@
+{
+  "name": "angelakos_matthew_a_lab6_backend",
+  "version": "1.0.0",
+  "description": "my lab 6 :D",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node ./tasks/seed.js"
+  },
+  "author": "Matthew Angelakos 20005936",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.9.3",
+    "graphql": "^16.8.1",
+    "mongodb": "^6.1.0",
+    "redis": "^4.7.0"
+  }
+}

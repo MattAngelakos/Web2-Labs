@@ -1,0 +1,41 @@
+<h1>{{pokemon.name}}</h1>
+<p>Base Experience: {{pokemon.base_experience}}</p>
+<p>Pokedex Id: {{pokemon.order}}</p>
+<h2>Abilities:</h2>
+<ul>
+  {{#each pokemon.abilities}}
+    <li>
+      {{ability.name}}
+      {{#if is_hidden}}(Hidden){{/if}} 
+      - Slot: {{slot}}
+    </li>
+  {{/each}}
+</ul>
+<h2>Forms:</h2>
+<ul>
+  {{#each pokemon.forms}}
+    <li>{{name}}</li>
+  {{/each}}
+</ul>
+<h2>Sprites:</h2>
+<img src="{{pokemon.sprites.front_default}}" alt="Front Default">
+<img src="{{pokemon.sprites.back_default}}" alt="Back Default">
+<img src="{{pokemon.sprites.front_shiny}}" alt="Front Shiny">
+<img src="{{pokemon.sprites.back_shiny}}" alt="Back Shiny">
+<h2>Stats:</h2>
+<ul>
+  {{#each pokemon.stats}}
+    <li>
+      {{stat.name}}: Base Stat: {{base_stat}}, Effort: {{effort}}
+    </li>
+  {{/each}}
+</ul>
+<h2>Types:</h2>
+<ul>
+  {{#each pokemon.types}}
+    <li>
+      {{type.name}} - Slot: {{slot}}
+    </li>
+  {{/each}}
+</ul>
+<p>Weight: {{pokemon.weight}} kg</p>

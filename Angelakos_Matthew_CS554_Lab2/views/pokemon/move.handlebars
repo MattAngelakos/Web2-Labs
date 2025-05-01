@@ -1,0 +1,53 @@
+<div class="move-details">
+    <h1>Move: {{move.name}}</h1>
+    <p>Power: {{move.power}}</p>
+    <p>PP: {{move.pp}}</p>
+    <p>Accuracy: {{move.accuracy}}</p>
+    <p>Type:{{move.type.name}}</p>
+    <p>Damage Class:{{move.damage_class.name}}</p>
+    <p>Target:{{move.target.name}}</p>
+    <h2>Contest Information</h2>
+    <p>Contest Type:{{move.contest_type.name}}</p>
+    <h3>Contest Combos</h3>
+    {{#if move.contest_combos.normal.use_before}}
+    <p>Use Before:</p>
+    <ul>
+        {{#each move.contest_combos.normal.use_before}}
+        <li>{{name}}</li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>No combos to use before.</p>
+    {{/if}}
+    {{#if move.contest_combos.normal.use_after}}
+    <p>Use After: {{move.contest_combos.normal.use_after.name}}</p>
+    <ul>
+        {{#each move.contest_combos.normal.use_after}}
+        <li>{{name}}</li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>No combos to use after.</p>
+    {{/if}}
+
+    <h2>Effect</h2>
+    {{#each move.effect_entries}}
+    <p>Effect: {{effect}}</p>
+    <p>Short Effect: {{short_effect}}</p>
+    {{/each}}
+    
+    <h2>Learned by Pokémon</h2>
+    <ul>
+        {{#each move.learned_by_pokemon}}
+        <li>{{name}}</li>
+        {{/each}}
+    </ul>
+
+    <h2>Meta</h2>
+    <p>Ailment:{{move.meta.ailment.name}}</p>
+    <p>Category:{{move.meta.category.name}}</p>
+    <p>Critical Hit Rate: {{move.meta.crit_rate}}</p>
+
+    <h2>Generation</h2>
+    <p>Generation:{{move.generation.name}}</p>
+</div>

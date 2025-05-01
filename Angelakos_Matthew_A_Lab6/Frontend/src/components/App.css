@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #28547a;
+  height: 150px;
+  padding: 20px;
+  color: #222;
+  position: relative;
+}
+
+.App-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+cite {
+  font-weight: bold;
+}
+table {
+  align-content: center;
+  margin: auto;
+}
+td {
+  padding: 10px;
+}
+
+.App-intro {
+  font-size: large;
+}
+.cap-first-letter:first-letter {
+  text-transform: capitalize;
+}
+.col-sm-6,
+col-md-4 {
+  border: 1px;
+}
+
+ul {
+  list-style: none;
+}
+
+.navlink {
+  padding: 10px;
+  background-color: white;
+  border-radius: 3px;
+  color: #28547a;
+  text-decoration: none !important;
+  margin-right: 20px;
+}
+
+.button {
+  padding: 10px;
+  background-color: #28547a;
+  border-radius: 3px;
+  color: white;
+  text-decoration: none !important;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+.button:hover {
+  padding: 10px;
+  background-color: white;
+  border-radius: 3px;
+  color: #28547a;
+  text-decoration: none !important;
+}
+
+.navlink:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+input,
+select {
+  padding: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #28547a;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 50%;
+  margin: 10px auto 20px;
+  height: auto;
+  padding: 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+div {
+  width: 100%;
+}
+
+@media (max-width: 820px) {
+  .App-header {
+    height: 250px;
+  }
+}

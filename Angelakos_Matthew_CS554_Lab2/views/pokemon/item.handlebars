@@ -1,0 +1,37 @@
+<div class="item-details">
+    <h2>{{item.name}}</h2>
+    <img src="{{item.sprites.default}}" alt="{{item.name}}">
+
+    <h3>Category</h3>
+    {{item.category.name}}
+
+    <h3>Cost</h3>
+    <p>{{item.cost}}</p>
+
+    <h3>Attributes</h3>
+    <ul>
+        {{#each item.attributes}}
+        <li>{{name}}</li>
+        {{/each}}
+    </ul>
+
+    <h3>Effect</h3>
+    {{#each effect_entries}}
+    <p>Effect: {{item.effect}}</p>
+    <p>Short Effect: {{item.short_effect}}</p>
+    {{/each}}
+
+    {{#if item.fling_effect}}
+    <h3>Fling Effect</h3>
+    <p>{{item.fling_effect}}</p>
+    {{else}}
+    <p>No fling effect</p>
+    {{/if}}
+
+    {{#if item.fling_power}}
+    <h3>Fling Power</h3>
+    <p>{{item.fling_power}}</p>
+    {{else}}
+    <p>No fling power</p>
+    {{/if}}
+</div>
